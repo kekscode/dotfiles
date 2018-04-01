@@ -1,0 +1,49 @@
+[user]
+	name = My Name
+	email = my.mail@mailprovider.com
+	signingkey = mykey
+[core]
+        editor = vim
+        pager = less -F -X
+[diff]
+        tool = vimdiff
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+[alias]
+        # common abbreviations used by others
+        co = checkout
+        cob = checkout -b
+        ci = commit
+        st = status
+        br = branch
+
+        # safer way to `git reset HEAD --hard`
+        undo = !git add -A && git commit -qm 'UNDO SAVEPOINT' && git reset HEAD~1 --hard
+        
+        # what happened the last minutes, hours, days, weeks...
+        tlog = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+        
+        # ascii graph
+        glog =log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --graph --date=relative
+        
+        # inspect repository objects
+        type = cat-file -t
+        dump = cat-file -p
+        
+        # find absolute paths for files
+        filepath = "!git ls-files | grep -i"
+        
+        # find all files by pattern
+        grep = grep -Ii
+        
+        # print all aliases
+        alias = "!git config -l | grep alias | cut -c 7-"
+[commit]
+	gpgsign = true
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

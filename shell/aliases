@@ -1,0 +1,15 @@
+# sysadmin
+alias ducks='du -xak . | sort -n | tail -50'  # show fat files (works on macos and linux)
+alias strace="strace -f -s 800"  # always follow forks and show first 800 chars of a string
+alias less='less -X' # does not clear the screen after 'q'uitting
+alias ll="ls -lFas"
+
+# dev
+alias g="git"
+alias diff="diff -u"
+
+# matching and replacing
+alias grep_ip="grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"  # grep IPv4 addresses and show them
+
+# aliases which need special dependencies not found on ordinary production machines
+# alias check-yaml="python -c 'import yaml,sys;yaml.safe_load(sys.stdin)'"  # dependency: `pip install pyyaml`
