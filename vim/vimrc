@@ -135,6 +135,13 @@ set background=dark
 " vertical bars (helps to align text)
 set colorcolumn=+1
 
+""""""""""""""""
+" T A B  B A R "
+""""""""""""""""
+
+" Always show tabline
+set showtabline=2
+
 """"""""""""""""""""""""""""
 " S P L I T  W I N D O W S "
 """"""""""""""""""""""""""""
