@@ -1,7 +1,7 @@
 [user]
-	name = My Name
-	email = my.mail@mailprovider.com
-	signingkey = mykey
+       name = My Name
+       email = my.mail@mailprovider.com
+       signingkey = mykey
 [core]
         editor = vim
         pager = less -F -X
@@ -47,3 +47,5 @@
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+[pull]
+	rebase = true
