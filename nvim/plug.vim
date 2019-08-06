@@ -1,0 +1,36 @@
+" https://vimawesome.com/
+call plug#begin('~/.local/share/nvim/plugged')
+Plug '/usr/local/opt/fzf'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'PhilRunninger/nerdtree-visual-selection'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/neosnippet-snippets'
+Plug 'Shougo/neosnippet.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'davidhalter/jedi-vim'
+Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
+Plug 'deoplete-plugins/deoplete-jedi'
+Plug 'easymotion/vim-easymotion'
+Plug 'edkolev/tmuxline.vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'jeetsukumaran/vim-buffergator'
+Plug 'jiangmiao/auto-pairs'
+Plug 'jremmen/vim-ripgrep'
+Plug 'junegunn/fzf.vim'
+Plug 'kassio/neoterm'
+Plug 'lifepillar/vim-solarized8'
+Plug 'machakann/vim-highlightedyank'
+Plug 'neomake/neomake'
+Plug 'ryanoasis/vim-devicons'
+Plug 'sbdchd/neoformat'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
+Plug 'sheerun/vim-polyglot'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'thaerkh/vim-workspace'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+call plug#end()
