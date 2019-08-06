@@ -1,7 +1,7 @@
 " Why not using the biggest key to enter command mode?
 nnoremap <Space> :
 
-"" Copy to clipboard for operations like yank, delete, change and put
+" Copy to clipboard for operations like yank, delete, change and put
 " http://stackoverflow.com/questions/20186975/vim-mac-how-to-copy-to-clipboard-without-pbcopy
 if has('unnamedplus')
   set clipboard^=unnamed
