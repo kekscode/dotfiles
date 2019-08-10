@@ -1,2 +1,7 @@
-" Exit Terminal insert mode with escape
-:tnoremap <Esc> <C-\><C-n>
+if exists('$TMUX')
+    set termguicolors
+endif
+set background=dark
+colorscheme solarized8_flat
+hi HighlightedyankRegion cterm=reverse gui=reverse
+syntax enable
