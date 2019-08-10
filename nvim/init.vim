@@ -39,6 +39,7 @@ set smartcase " ignore case if search pattern is lower case. Case-sensitive othe
 set smarttab
 set tabstop=4
 set undolevels=1000
+set conceallevel=0
 
 source $HOME/devops/dotfiles-local/nvim/airline.vim
 source $HOME/devops/dotfiles-local/nvim/autocomplete.vim
