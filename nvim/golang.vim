@@ -20,7 +20,7 @@ autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
 autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
 
 " :GoBuild and :GoTestCompile
-autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
+autocmd FileType go nmap <leader>B :<C-u>call <SID>build_go_files()<CR>
 " :GoTest
 autocmd FileType go nmap <leader>t  <Plug>(go-test)
 " :GoRun
@@ -36,4 +36,4 @@ autocmd FileType go nmap <Leader>l <Plug>(go-metalinter)
 " :GoDef but opens in a vertical split
 autocmd FileType go nmap <Leader>v <Plug>(go-def-vertical)
 " :GoDef but opens in a horizontal split
-autocmd FileType go nmap <Leader>s <Plug>(go-def-split)<Paste>
+autocmd FileType go nmap <Leader>S <Plug>(go-def-split)<Paste>
