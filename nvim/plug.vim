@@ -13,7 +13,7 @@ Plug 'deoplete-plugins/deoplete-jedi'
 Plug 'easymotion/vim-easymotion'
 Plug 'edkolev/tmuxline.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'jeetsukumaran/vim-buffergator'
+Plug 'gcmt/taboo.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'jremmen/vim-ripgrep'
 Plug 'junegunn/fzf.vim'

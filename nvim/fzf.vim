@@ -3,7 +3,7 @@ nnoremap <Leader>/ :History/<cr>
 nnoremap <Leader>: :History:/<cr>
 nnoremap <Leader>b :Buffers<cr>
 nnoremap <Leader>f :Files<cr>
-nnoremap <Leader>s :Rg<Space>
+nnoremap <Leader>r :Rg<Space>
 
 " This is the default extra key bindings
 let g:fzf_action = {

@@ -13,13 +13,6 @@ set wildmode=longest:full,full
 " My leader
 let mapleader=","
 
-" <Leader> key mappings
-nnoremap <Leader>/ :History/<cr>
-nnoremap <Leader>: :History:/<cr>
-nnoremap <Leader>b :Buffers<cr>
-nnoremap <Leader>f :Files<cr>
-nnoremap <Leader>s :Rg<Space>
-
 set nobackup       " no backup files
 set nowritebackup  " no backup file while editing
 set noswapfile     " no swap files
@@ -53,6 +46,7 @@ source $HOME/devops/dotfiles-local/nvim/neoformat.vim
 source $HOME/devops/dotfiles-local/nvim/neomake.vim
 source $HOME/devops/dotfiles-local/nvim/neosnippet.vim
 source $HOME/devops/dotfiles-local/nvim/python.vim
+source $HOME/devops/dotfiles-local/nvim/taboo.vim
 source $HOME/devops/dotfiles-local/nvim/terminal.vim
 source $HOME/devops/dotfiles-local/nvim/windows.vim
 source $HOME/devops/dotfiles-local/nvim/workspace.vim

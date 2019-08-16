@@ -1,7 +1,2 @@
-if exists('$TMUX')
-    set termguicolors
-endif
-set background=dark
-colorscheme solarized8_flat
-hi HighlightedyankRegion cterm=reverse gui=reverse
-syntax enable
+autocmd TermOpen * if &buftype == 'terminal' | setlocal nonumber | endif
+autocmd TermOpen * if &buftype == 'terminal' | :startinsert | endif
