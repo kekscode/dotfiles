@@ -1,7 +1,6 @@
 let g:go_auto_sameids = 1
 let g:go_auto_type_info = 1
 let g:go_fmt_command = "goimports"
-let g:go_fmt_command = "goimports"
 let g:go_fmt_fail_silently = 1
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_extra_types = 1
@@ -23,6 +22,8 @@ autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit'
 autocmd FileType go nmap <leader>B <Plug>(go-build)
 " :GoTest
 autocmd FileType go nmap <leader>t <Plug>(go-test)
+" :GoAlternate
+autocmd FileType go nmap <leader>a :GoAlternate<cr>
 " :GoRun
 autocmd FileType go nmap <leader>r <Plug>(go-run)
 " :GoDoc

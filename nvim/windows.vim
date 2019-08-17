@@ -15,5 +15,6 @@ nnoremap <tab>L <C-w>L
 
 " Window splitting
 set splitbelow
+set splitright
 nnoremap <tab>- :split<CR>
 nnoremap <tab>\| :vsplit<CR>
