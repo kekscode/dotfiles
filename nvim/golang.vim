@@ -20,11 +20,11 @@ autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
 autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
 
 " :GoBuild and :GoTestCompile
-autocmd FileType go nmap <leader>B :<C-u>call <SID>build_go_files()<CR>
+autocmd FileType go nmap <leader>B <Plug>(go-build)
 " :GoTest
-autocmd FileType go nmap <leader>t  <Plug>(go-test)
+autocmd FileType go nmap <leader>t <Plug>(go-test)
 " :GoRun
-autocmd FileType go nmap <leader>r  <Plug>(go-run)
+autocmd FileType go nmap <leader>r <Plug>(go-run)
 " :GoDoc
 autocmd FileType go nmap <Leader>d <Plug>(go-doc)
 " :GoCoverageToggle
