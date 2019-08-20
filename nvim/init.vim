@@ -35,7 +35,6 @@ set undolevels=1000
 set conceallevel=0
 
 source $HOME/devops/dotfiles-local/nvim/airline.vim
-source $HOME/devops/dotfiles-local/nvim/deoplete.vim
 source $HOME/devops/dotfiles-local/nvim/bufferhandling.vim
 source $HOME/devops/dotfiles-local/nvim/colorscheme.vim
 source $HOME/devops/dotfiles-local/nvim/easymotion.vim
@@ -44,9 +43,10 @@ source $HOME/devops/dotfiles-local/nvim/golang.vim
 source $HOME/devops/dotfiles-local/nvim/hacks.vim
 source $HOME/devops/dotfiles-local/nvim/neoformat.vim
 source $HOME/devops/dotfiles-local/nvim/neomake.vim
-source $HOME/devops/dotfiles-local/nvim/neosnippet.vim
 source $HOME/devops/dotfiles-local/nvim/python.vim
 source $HOME/devops/dotfiles-local/nvim/taboo.vim
 source $HOME/devops/dotfiles-local/nvim/terminal.vim
+source $HOME/devops/dotfiles-local/nvim/ultisnips.vim
 source $HOME/devops/dotfiles-local/nvim/windows.vim
 source $HOME/devops/dotfiles-local/nvim/workspace.vim
+source $HOME/devops/dotfiles-local/nvim/youcompleteme.vim
