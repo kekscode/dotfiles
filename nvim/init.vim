@@ -35,7 +35,7 @@ set undolevels=1000
 set conceallevel=0
 
 source $HOME/devops/dotfiles-local/nvim/airline.vim
-source $HOME/devops/dotfiles-local/nvim/autocomplete.vim
+source $HOME/devops/dotfiles-local/nvim/deoplete.vim
 source $HOME/devops/dotfiles-local/nvim/bufferhandling.vim
 source $HOME/devops/dotfiles-local/nvim/colorscheme.vim
 source $HOME/devops/dotfiles-local/nvim/easymotion.vim
