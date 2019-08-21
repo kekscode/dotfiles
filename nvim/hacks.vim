@@ -8,6 +8,10 @@ if has('unnamedplus')
   set clipboard^=unnamedplus
 endif
 
+" Custom variant of the gf command that opens a new
+" buffer if the file under the cursor does not exist
+map <leader>gf :e <cfile><cr>
+
 " A neat trick to set the cursor to
 " the center of the screen at all times.
 " This is easier on the eyes (IMHO).
