@@ -7,6 +7,7 @@ Plug 'SirVer/ultisnips'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' } " requires cmake (brew install cmake)
 Plug 'airblade/vim-gitgutter'
 Plug 'davidhalter/jedi-vim'
+Plug 'dense-analysis/ale'
 Plug 'easymotion/vim-easymotion'
 Plug 'edkolev/tmuxline.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
