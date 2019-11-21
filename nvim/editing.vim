@@ -3,7 +3,7 @@ set display+=lastline
 set number
 set autoindent
 set copyindent
-set conceallevel=0
+set conceallevel=2
 set ignorecase " ignorecase is needed if smartcase is used
 set magic
 set mouse=a
@@ -18,3 +18,4 @@ set shiftwidth=4
 set history=1000
 set undolevels=1000
 set lazyredraw
+set list listchars=tab:»·,trail:·

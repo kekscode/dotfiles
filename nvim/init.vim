@@ -1,27 +1,26 @@
 " Load plugins first
-source $HOME/devops/dotfiles-local/nvim/plug.vim
+source $HOME/.config/nvim/plug.vim
 
 " Config
-source $HOME/devops/dotfiles-local/nvim/backup.vim
-source $HOME/devops/dotfiles-local/nvim/colorscheme.vim
-source $HOME/devops/dotfiles-local/nvim/columns.vim
-source $HOME/devops/dotfiles-local/nvim/cursor.vim
-source $HOME/devops/dotfiles-local/nvim/editing.vim
-source $HOME/devops/dotfiles-local/nvim/hacks.vim
-source $HOME/devops/dotfiles-local/nvim/terminal.vim
-source $HOME/devops/dotfiles-local/nvim/wildmenu.vim
-source $HOME/devops/dotfiles-local/nvim/windows.vim
+source $HOME/.config/nvim/backup.vim
+source $HOME/.config/nvim/colorscheme.vim
+source $HOME/.config/nvim/columns.vim
+source $HOME/.config/nvim/cursor.vim
+source $HOME/.config/nvim/editing.vim
+source $HOME/.config/nvim/hacks.vim
+source $HOME/.config/nvim/terminal.vim
+source $HOME/.config/nvim/wildmenu.vim
+source $HOME/.config/nvim/windows.vim
 
 " Config (plugins)
-source $HOME/devops/dotfiles-local/nvim/plug-airline.vim
-source $HOME/devops/dotfiles-local/nvim/plug-anyfold.vim
-source $HOME/devops/dotfiles-local/nvim/plug-easymotion.vim
-source $HOME/devops/dotfiles-local/nvim/plug-fzf.vim
-source $HOME/devops/dotfiles-local/nvim/plug-golang.vim
-source $HOME/devops/dotfiles-local/nvim/plug-neoformat.vim
-source $HOME/devops/dotfiles-local/nvim/plug-neomake.vim
-source $HOME/devops/dotfiles-local/nvim/plug-python.vim
-source $HOME/devops/dotfiles-local/nvim/plug-taboo.vim
-source $HOME/devops/dotfiles-local/nvim/plug-ultisnips.vim
-source $HOME/devops/dotfiles-local/nvim/plug-workspace.vim
-source $HOME/devops/dotfiles-local/nvim/plug-youcompleteme.vim
+source $HOME/.config/nvim/plug-airline.vim
+source $HOME/.config/nvim/plug-easymotion.vim
+source $HOME/.config/nvim/plug-fzf.vim
+source $HOME/.config/nvim/plug-golang.vim
+source $HOME/.config/nvim/plug-neoformat.vim
+source $HOME/.config/nvim/plug-neomake.vim
+source $HOME/.config/nvim/plug-python.vim
+source $HOME/.config/nvim/plug-taboo.vim
+source $HOME/.config/nvim/plug-ultisnips.vim
+source $HOME/.config/nvim/plug-workspace.vim
+source $HOME/.config/nvim/plug-youcompleteme.vim

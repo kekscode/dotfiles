@@ -1,7 +1,9 @@
 if exists('$TMUX')
     set termguicolors
 endif
-set background=dark
-colorscheme solarized8_flat
+if (has("termguicolors"))
+ set termguicolors
+endif
+colorscheme tender
 hi HighlightedyankRegion cterm=reverse gui=reverse
 syntax enable
