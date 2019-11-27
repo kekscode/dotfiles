@@ -5,6 +5,10 @@ nnoremap <Leader>b :Buffers<cr>
 nnoremap <Leader>f :Files<cr>
 nnoremap <Leader>r :Rg<Space>
 
+" fd is only configurable with env vars. Setting them here allows vimr, which
+" is a vim frontend which is not started on the shell, to use custom config:
+let $FZF_DEFAULT_COMMAND='fd --hidden --no-ignore --type f'
+
 " This is the default extra key bindings
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
@@ -58,3 +62,6 @@ function! s:fzf_statusline()
 endfunction
 
 autocmd! User FzfStatusLine call <SID>fzf_statusline()
+
+command! -bang -nargs=? -complete=dir Files
+    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
