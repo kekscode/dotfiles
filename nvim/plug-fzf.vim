@@ -7,7 +7,8 @@ nnoremap <Leader>r :Rg<Space>
 
 " fd is only configurable with env vars. Setting them here allows vimr, which
 " is a vim frontend which is not started on the shell, to use custom config:
-let $FZF_DEFAULT_COMMAND='fd --hidden --no-ignore --type f'
+let $FZF_DEFAULT_COMMAND='fd --hidden --type f'
+" Note: Add an ~/.ignore file with the patterns to ignore like .git
 
 " This is the default extra key bindings
 let g:fzf_action = {
