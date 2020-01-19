@@ -1,6 +1,7 @@
 " Faster and more natural window switching (without ctrl+w <?>)
 nnoremap <tab> <C-w>
 nnoremap <tab><tab> <C-w><C-w>
+
 " nnoremap <s-tab><s-tab> <C-w><C-W> TODO: Does not work
 nnoremap <tab>h <C-w>h
 nnoremap <tab>j <C-w>j
@@ -18,3 +19,7 @@ set splitbelow
 set splitright
 nnoremap <tab>- :split<CR>
 nnoremap <tab>\| :vsplit<CR>
+
+" Window zooming (requires vim-zoom plugin)
+nmap <tab>z <Plug>(zoom-toggle)
+
