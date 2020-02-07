@@ -1,4 +1,4 @@
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1  " Shows buffers if only 1 tab is used
 let g:airline#extensions#tabline#fnamemod = ':t'  " Show only the filename
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline#extensions#tabline#show_buffers = 0
@@ -8,6 +8,6 @@ let g:airline#extensions#tabline#tab_min_count = 2
 let g:airline#extensions#tabline#show_tab_nr= 0
 let g:airline#extensions#tmuxline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_statusline_ontop = 0
-let g:airline_theme='tender' " Theme from airline-themes
+let g:airline_statusline_ontop = 1
+let g:airline_theme='minimalist' " Theme from airline-themes
 let g:tmuxline_powerline_separators = 1
