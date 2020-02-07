@@ -20,9 +20,6 @@ inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 " Close popup window when done
 autocmd CompleteDone * silent! pclose!
 
-" Python
-let g:deoplete#sources#jedi#show_docstring = 1
-
 " Golang
 let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
 let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
