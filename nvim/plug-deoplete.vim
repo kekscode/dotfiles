@@ -2,7 +2,10 @@
 let g:deoplete#enable_at_startup = 1
 
 " No more built-in previews
-set completeopt-=preview
+set completeopt+=preview
+
+" Vim completion menu height
+set pumheight=10
 
 " Change some defaults
 call deoplete#custom#option('camel_case', v:true)
@@ -17,8 +20,9 @@ inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 " Close popup window when done
 autocmd CompleteDone * silent! pclose!
 
-" Enter inserts completion instead of closing the popup window:
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-function! s:my_cr_function() abort
-  return deoplete#close_popup() . "\<CR>"
-endfunction
+" Python
+let g:deoplete#sources#jedi#show_docstring = 1
+
+" Golang
+let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
+let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
