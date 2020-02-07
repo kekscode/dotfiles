@@ -3,7 +3,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug '/usr/local/opt/fzf'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'SirVer/ultisnips'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' } " requires cmake (brew install cmake)
 Plug 'airblade/vim-gitgutter'
 Plug 'davidhalter/jedi-vim'
 Plug 'dense-analysis/ale'
@@ -32,4 +31,10 @@ Plug 'tpope/vim-surround'
 Plug 'dhruvasagar/vim-zoom'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'deoplete-plugins/deoplete-jedi'
+  Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
+  Plug 'wellle/tmux-complete.vim'
+endif
 call plug#end()
