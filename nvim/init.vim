@@ -14,6 +14,7 @@ source $HOME/devops/dotfiles-upstream/nvim/windows.vim
 
 " Config (plugins)
 source $HOME/devops/dotfiles-upstream/nvim/plug-airline.vim
+source $HOME/devops/dotfiles-upstream/nvim/plug-float-preview.vim
 source $HOME/devops/dotfiles-upstream/nvim/plug-fzf.vim
 source $HOME/devops/dotfiles-upstream/nvim/plug-golang.vim
 source $HOME/devops/dotfiles-upstream/nvim/plug-jedi-vim.vim
