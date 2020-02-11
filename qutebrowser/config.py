@@ -49,7 +49,7 @@ c.tabs.background = True
 config.bind('<Escape>', 'fake-key <Escape>')
 
 # xt for toggling tabs
-config.bind('xt', 'onfig-cycle tabs.show always switching')
+config.bind('xt', 'config-cycle tabs.show always switching')
 
 # Load autoconfig file if existing
 config.load_autoconfig()
