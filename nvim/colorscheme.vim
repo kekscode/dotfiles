@@ -7,6 +7,4 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
-hi HighlightedyankRegion cterm=reverse gui=reverse
-
 syntax enable
