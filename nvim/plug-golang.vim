@@ -12,6 +12,7 @@ let g:go_highlight_types = 1
 let g:go_list_type = "quickfix"
 let g:go_metalinter_autosave = 0
 let g:go_metalinter_deadline = "5s"
+let g:go_fmt_experimental = 1
 
 autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
 autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
