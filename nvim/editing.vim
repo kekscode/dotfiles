@@ -20,3 +20,4 @@ set undolevels=1000
 set lazyredraw
 set list listchars=tab:»·,trail:·
 set foldmethod=indent
+set autoread
