@@ -1,0 +1,36 @@
+# espanso configuration file
+
+matches:
+  # Simple text replacement
+  - trigger: "gti"
+    replace: "git"
+
+  # Date and Time
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%d.%m.%Y"
+
+  - trigger: ":now"
+    replace: "{{mytime}}"
+    vars:
+      - name: mytime
+        type: date
+        params:
+          format: "%H:%M:%S"
+
+  # Shell
+  - trigger: ":brewup"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: >
+                echo "brew update &&
+                brew upgrade &&
+                brew cask upgrade &&
+                brew cleanup"
