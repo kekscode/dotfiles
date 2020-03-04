@@ -1,9 +1,21 @@
 # espanso configuration file
 
-matches:
+matches:  # https://espanso.org/docs/matches/
   # Simple text replacement
   - trigger: "gti"
     replace: "git"
+
+  - trigger: "phtyon"
+    replace: "python"
+
+  - trigger: "phton"
+    replace: "python"
+
+  - trigger: "pthon"
+    replace: "python"
+
+  - trigger: "phyton"
+    replace: "python"
 
   # Date and Time
   - trigger: ":date"
