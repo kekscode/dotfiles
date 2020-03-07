@@ -35,7 +35,7 @@ matches:  # https://espanso.org/docs/matches/
           format: "%H:%M:%S"
 
   # Shell
-  - trigger: ":brewup"
+  - trigger: "brewup"
     replace: "{{output}}"
     vars:
       - name: output
