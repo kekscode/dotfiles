@@ -20,6 +20,7 @@ Plug 'junegunn/gv.vim'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'machakann/vim-highlightedyank'
 Plug 'mhinz/vim-startify'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neomake/neomake'
 Plug 'ryanoasis/vim-devicons'
 Plug 'sbdchd/neoformat'
