@@ -5,5 +5,5 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
-colorscheme angr
+colorscheme tender
 syntax enable

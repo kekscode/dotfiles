@@ -9,5 +9,5 @@ let g:airline#extensions#tabline#show_tab_nr= 0
 let g:airline#extensions#tmuxline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_statusline_ontop = 1
-let g:airline_theme='angr' " Theme from airline-themes
+let g:airline_theme='deus' " Theme from airline-themes
 let g:tmuxline_powerline_separators = 1
