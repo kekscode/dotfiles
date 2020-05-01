@@ -41,6 +41,10 @@ else
   inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 endif
 
+" Move with ctrl-k and ctrl-j in the popup menu
+inoremap <expr> <C-j> pumvisible() ? "\<C-N>" : "\<C-j>" 
+inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "\<C-k>"
+
 " Use `[g` and `]g` to navigate diagnostics
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
