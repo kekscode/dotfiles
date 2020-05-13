@@ -19,3 +19,6 @@ source $HOME/devops/dotfiles-upstream/nvim/plug-golang.vim
 source $HOME/devops/dotfiles-upstream/nvim/plug-python.vim
 source $HOME/devops/dotfiles-upstream/nvim/plug-taboo.vim
 source $HOME/devops/dotfiles-upstream/nvim/plug-coc.vim
+
+" Config (personal)
+source $HOME/devops/dotfiles-upstream/nvim/jumplist.vim
