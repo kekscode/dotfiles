@@ -26,4 +26,5 @@ Plug 'tpope/vim-surround'
 Plug 'dhruvasagar/vim-zoom'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'wellle/tmux-complete.vim'
 call plug#end()
