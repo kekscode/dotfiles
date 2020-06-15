@@ -8,7 +8,7 @@ matches:  # https://espanso.org/docs/matches/
   - trigger: "phtyon"
     replace: "python"
 
-  - trigger: "phton"
+  - trigger: "pyhton"
     replace: "python"
 
   - trigger: "pthon"
