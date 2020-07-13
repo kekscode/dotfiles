@@ -5,5 +5,5 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
-colorscheme tender
+colorscheme molokai
 syntax enable
