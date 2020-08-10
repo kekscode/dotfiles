@@ -2,8 +2,8 @@
 source $HOME/devops/dotfiles-upstream/nvim/plug.vim
 
 " Config
-source $HOME/devops/dotfiles-upstream/nvim/backup.vim
 source $HOME/devops/dotfiles-upstream/nvim/color.vim
+source $HOME/devops/dotfiles-upstream/nvim/backup.vim
 source $HOME/devops/dotfiles-upstream/nvim/columns.vim
 source $HOME/devops/dotfiles-upstream/nvim/cursor.vim
 source $HOME/devops/dotfiles-upstream/nvim/editing.vim
