@@ -1,5 +1,10 @@
 live_config_reload: true
 
+key_bindings:
+  - { key: F8,     action: DecreaseFontSize }
+  - { key: F9,     action: ResetFontSize }
+  - { key: F10,    action: IncreaseFontSize }
+
 window:
   decorations: full
 
