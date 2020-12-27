@@ -1,3 +1,6 @@
+" colorscheme
+colorscheme verticaltabs
+
 " Options
 set adblocker=update
 set cache=clearonquit
@@ -38,7 +41,7 @@ set nomousenewtabswitch
 set nonativenotification
 set notificationduration=6000
 set nonotificationforpermissions
-set notificationposition=bottomright
+set notificationposition=topright
 set permissioncamera=ask
 set permissionclipboardread=ask
 set permissionclosepage=allow
@@ -74,10 +77,10 @@ set suggestcommands=1000
 set suggestfiles=all
 set nosuggestfilesfirst
 set suggestexplore=20
-set suggesttopsites=10
+set suggesttopsites=5
 set tabcycle
 set tabnexttocurrent
-set taboverflow=wrap " works in conjunction with mintabwidth 0 or 1.. setting
+set taboverflow=wrap
 set timeout
 set timeoutlen=1000
 set vimcommand=code
