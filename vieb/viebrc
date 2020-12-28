@@ -112,7 +112,6 @@ cmap <K> <action.prevSuggestion>
 cmap <J> <action.nextSuggestion>
 
 " Explore mode mappings
-emap <F6> <action.toNormalMode>
 emap <Up> <action.prevSuggestion>
 emap <Down> <action.nextSuggestion>
 emap <K> <action.prevSuggestion>
