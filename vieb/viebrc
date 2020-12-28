@@ -86,7 +86,7 @@ set timeoutlen=1000
 set vimcommand=code
 set windowtitle=simple
 
-" Mappings
+" Global Mappings
 map <Up> <action.scrollUp>
 map <Down> <action.scrollDown>
 map <Left> <action.scrollLeft>
@@ -131,10 +131,18 @@ map <A-8> <:b 7>
 map <A-9> <:b 8>
 map <A-F4> <:quit>
 map <M-Q> <:quit>
+
+" Command mode mappings
 cmap <Up> <action.commandHistoryPrevious>
 cmap <Down> <action.commandHistoryNext>
+cmap <K> <action.prevSuggestion>
+cmap <J> <action.nextSuggestion>
+
+" Explore mode mappings
 emap <F6> <action.toNormalMode>
 emap <Up> <action.prevSuggestion>
 emap <Down> <action.nextSuggestion>
+emap <K> <action.prevSuggestion>
+emap <J> <action.nextSuggestion>
 
 " vim: ft=vim
