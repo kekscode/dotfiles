@@ -111,6 +111,7 @@ map <C-p> <:hardcopy>
 map <C-q> <:quit>
 map <C-s> <:write>
 map <C-t> <action.openNewTab><action.toExploreMode>
+map <O> <action.openNewTab><action.toExploreMode>
 map <C-Tab> <action.nextTab>
 map <C-S-PageUp> <action.moveTabBackward>
 map <C-S-PageDown> <action.moveTabForward>
