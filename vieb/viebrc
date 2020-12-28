@@ -96,14 +96,12 @@ map <PageDown> <action.scrollPageDown>
 map <Home> <action.scrollTop>
 map <End> <action.scrollBottom>
 map <F12> <:devtools>
-map <C-h> <:history>
-map <C-j> <:downloads>
 map <C-l> <action.toExploreMode>
-map <C-p> <:hardcopy>
-map <C-q> <:quit>
-map <C-s> <:write>
-map <C-I> <:devtools>
 map <S-e> <action.openNewTab><action.toExploreMode>
+
+" Normal mode mappings
+nmap <C-K> action.moveTabBackward
+nmap <C-J> action.moveTabForward
 
 " Command mode mappings
 cmap <Up> <action.commandHistoryPrevious>
