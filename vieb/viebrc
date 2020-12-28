@@ -34,7 +34,7 @@ set keeprecentlyclosed
 set ignorecase
 set incsearch
 set maxmapdepth=10
-set mintabwidth=0
+set mintabwidth=28
 set mouse
 set nomousefocus
 set nomousenewtabswitch
@@ -83,8 +83,8 @@ set tabnexttocurrent
 set taboverflow=wrap
 set timeout
 set timeoutlen=1000
-set vimcommand=code
-set windowtitle=simple
+set vimcommand="/usr/local/bin/code --new-window --"
+set windowtitle=full
 
 " Global Mappings
 map <Up> <action.scrollUp>
