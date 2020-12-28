@@ -69,8 +69,8 @@ set search=https://google.com/search?q=%s
 set showcmd
 set spell
 set spelllang=system
-set nosplitbelow
-set nosplitright
+set splitbelow
+set splitright
 set startuppages=
 set storenewvisits
 set suggestcommands=1000
