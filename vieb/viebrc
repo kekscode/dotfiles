@@ -77,7 +77,7 @@ set suggestcommands=1000
 set suggestfiles=all
 set nosuggestfilesfirst
 set suggestexplore=1000
-set suggesttopsites=20
+set suggesttopsites=
 set tabcycle
 set tabnexttocurrent
 set taboverflow=wrap
