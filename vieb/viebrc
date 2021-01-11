@@ -116,4 +116,7 @@ emap <Down> <action.nextSuggestion>
 emap <K> <action.prevSuggestion>
 emap <J> <action.nextSuggestion>
 
-" vim: ft=vim
+" UNmappings
+iunmap E
+
+"" vim: ft=vim
