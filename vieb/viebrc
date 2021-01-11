@@ -98,11 +98,16 @@ map <End> <action.scrollBottom>
 map <F12> <:devtools>
 map <C-l> <action.toExploreMode>
 map <S-e> <action.openNewTab><action.toExploreMode>
-map y <action.pageToClipboard>
 
 " Normal mode mappings
 nmap <C-K> action.moveTabBackward
 nmap <C-J> action.moveTabForward
+nmap <lt> <:set guitabbar=onupdate guinavbar=onupdate>
+nmap > <:set guitabbar=always guinavbar=always>
+nmap y <action.pageToClipboard>
+nmap - <action.zoomOut>
+nmap + <action.zoomIn>
+nmap = <action.zoomReset>
 
 " Command mode mappings
 cmap <Up> <action.commandHistoryPrevious>
