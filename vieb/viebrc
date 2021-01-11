@@ -98,6 +98,7 @@ map <End> <action.scrollBottom>
 map <F12> <:devtools>
 map <C-l> <action.toExploreMode>
 map <S-e> <action.openNewTab><action.toExploreMode>
+map y <action.pageToClipboard>
 
 " Normal mode mappings
 nmap <C-K> action.moveTabBackward
