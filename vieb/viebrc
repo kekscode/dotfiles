@@ -123,5 +123,6 @@ emap <J> <action.nextSuggestion>
 
 " UNmappings
 iunmap E
+sunmap E
 
 "" vim: ft=vim
