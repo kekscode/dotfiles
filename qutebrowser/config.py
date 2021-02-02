@@ -348,7 +348,8 @@ c.url.searchengines = { "DEFAULT": "https://www.google.de/search?q={}" }
 c.url.start_pages = "https://news.ycombinator.com"
 c.fonts.default_family = []
 
-c.editor.command = ["/usr/local/bin/vimr", "--cur-env", "--wait", "{}"]
+#c.editor.command = ["/usr/local/bin/vimr", "--cur-env", "--wait", "{}"]
+c.editor.command = ['open', '-n', '-b', "com.microsoft.VSCode", '--wait-apps', '--args', '-n', '-w', '{}']
 
 c.input.insert_mode.auto_enter = True
 c.input.insert_mode.auto_leave = False
