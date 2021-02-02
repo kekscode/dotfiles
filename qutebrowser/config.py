@@ -347,7 +347,7 @@ c.window.hide_decoration = False
 c.url.searchengines = { "DEFAULT": "https://www.google.de/search?q={}" }
 c.url.start_pages = "https://news.ycombinator.com"
 c.fonts.default_family = []
-c.editor.command = ["code -n -w", "{file}"]
+c.editor.command = ["/usr/local/bin/code -n -w", "{file}"]
 
 c.input.insert_mode.auto_enter = True
 c.input.insert_mode.auto_leave = False
@@ -355,6 +355,8 @@ c.input.insert_mode.auto_load = True
 
 c.tabs.background = True
 c.tabs.title.format = "{audio}{current_title}"
+
+c.colors.webpage.prefers_color_scheme_dark = True
 
 # Experimental: Allow passthru Escape to websites
 config.bind('<Escape>', 'fake-key <Escape>')
@@ -367,5 +369,11 @@ config.bind('e', 'set-cmd-text -s :open', mode="normal")
 config.bind('E', 'set-cmd-text -s :open -t', mode="normal")
 config.bind('p', 'set-cmd-text -s :open -t -- {clipboard}', mode="normal")
 
-# Load autoconfig file if existing
-#config.load_autoconfig()
+# Bindings for cycling through CSS stylesheets from Solarized Everything CSS:
+# https://github.com/alphapapa/solarized-everything-css
+config.bind(',x', 'config-unset content.user_stylesheets')
+config.bind(',ap', 'config-cycle content.user_stylesheets ~/devops/solarized-everything-css/css/apprentice/apprentice-all-sites.css ""')
+config.bind(',dr', 'config-cycle content.user_stylesheets ~/devops/solarized-everything-css/css/darculized/darculized-all-sites.css ""')
+config.bind(',gr', 'config-cycle content.user_stylesheets ~/devops/solarized-everything-css/css/gruvbox/gruvbox-all-sites.css ""')
+config.bind(',sd', 'config-cycle content.user_stylesheets ~/devops/solarized-everything-css/css/solarized-dark/solarized-dark-all-sites.css ""')
+config.bind(',sl', 'config-cycle content.user_stylesheets ~/devops/solarized-everything-css/css/solarized-light/solarized-light-all-sites.css ""')
