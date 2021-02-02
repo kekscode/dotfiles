@@ -1,3 +1,5 @@
+config.load_autoconfig(False)
+
 nord = {
     # Polar Night
     'nord0': '#2e3440',
@@ -339,16 +341,13 @@ c.fonts.web.size.default = 16
 c.fonts.default_size = "18px"
 
 c.auto_save.session = True
-c.content.host_blocking.enabled = True
-#c.content.headers.user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
-c.content.user_stylesheets = "/Users/stefanantoni/.qutebrowser/style.css"
 c.completion.use_best_match = True
 c.tabs.position = "left"
 c.window.hide_decoration = False
 c.url.searchengines = { "DEFAULT": "https://www.google.de/search?q={}" }
 c.url.start_pages = "https://news.ycombinator.com"
 c.fonts.default_family = []
-c.editor.command = ["vimr", "{file}"]
+c.editor.command = ["code -n -w", "{file}"]
 
 c.input.insert_mode.auto_enter = True
 c.input.insert_mode.auto_leave = False
@@ -362,6 +361,11 @@ config.bind('<Escape>', 'fake-key <Escape>')
 
 # xt for toggling tabs
 config.bind('xt', 'config-cycle tabs.show always switching')
+
+# Better tab opening
+config.bind('e', 'set-cmd-text -s :open', mode="normal")
+config.bind('E', 'set-cmd-text -s :open -t', mode="normal")
+config.bind('p', 'set-cmd-text -s :open -t -- {clipboard}', mode="normal")
 
 # Load autoconfig file if existing
 #config.load_autoconfig()
