@@ -347,7 +347,8 @@ c.window.hide_decoration = False
 c.url.searchengines = { "DEFAULT": "https://www.google.de/search?q={}" }
 c.url.start_pages = "https://news.ycombinator.com"
 c.fonts.default_family = []
-c.editor.command = ["/usr/local/bin/code -n -w", "{file}"]
+
+c.editor.command = ["/usr/local/bin/vimr", "--cur-env", "--wait", "{}"]
 
 c.input.insert_mode.auto_enter = True
 c.input.insert_mode.auto_leave = False
