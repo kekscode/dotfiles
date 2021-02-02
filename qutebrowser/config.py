@@ -377,11 +377,15 @@ config.bind('<Ctrl+j>', 'tab-move +', mode="normal")
 # Paste URL to edit (and open in new tab)
 config.bind('p', 'set-cmd-text -s :open -t -- {clipboard}', mode="normal")
 
-# Bindings for cycling through CSS stylesheets from Solarized Everything CSS:
-# https://github.com/alphapapa/solarized-everything-css
-config.bind(',x', 'config-unset content.user_stylesheets')
-config.bind(',ap', 'config-cycle content.user_stylesheets ~/devops/solarized-everything-css/css/apprentice/apprentice-all-sites.css ""')
-config.bind(',dr', 'config-cycle content.user_stylesheets ~/devops/solarized-everything-css/css/darculized/darculized-all-sites.css ""')
-config.bind(',gr', 'config-cycle content.user_stylesheets ~/devops/solarized-everything-css/css/gruvbox/gruvbox-all-sites.css ""')
-config.bind(',sd', 'config-cycle content.user_stylesheets ~/devops/solarized-everything-css/css/solarized-dark/solarized-dark-all-sites.css ""')
-config.bind(',sl', 'config-cycle content.user_stylesheets ~/devops/solarized-everything-css/css/solarized-light/solarized-light-all-sites.css ""')
+# Bindings for cycling through CSS stylesheets
+config.bind(',light', 'config-unset content.user_stylesheets')
+config.bind(',dark', 'config-cycle content.user_stylesheets ~/devops/css-qutebrowser/perfectdark.css ""')
+# Content of file perfectdark.css is:
+#
+# html {
+#     filter: invert(1) hue-rotate(180deg);
+# }
+#
+# html img{
+#     filter: invert(1) hue-rotate(180deg);
+# }
