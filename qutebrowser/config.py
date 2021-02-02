@@ -369,6 +369,12 @@ config.bind('xt', 'config-cycle tabs.show always switching')
 # Better tab opening
 config.bind('e', 'set-cmd-text -s :open', mode="normal")
 config.bind('E', 'set-cmd-text -s :open -t', mode="normal")
+
+# Move tab position
+config.bind('<Ctrl+k>', 'tab-move -', mode="normal")
+config.bind('<Ctrl+j>', 'tab-move +', mode="normal")
+
+# Paste URL to edit (and open in new tab)
 config.bind('p', 'set-cmd-text -s :open -t -- {clipboard}', mode="normal")
 
 # Bindings for cycling through CSS stylesheets from Solarized Everything CSS:
