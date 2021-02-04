@@ -389,3 +389,6 @@ config.bind(',dark', 'config-cycle content.user_stylesheets ~/devops/css-qutebro
 # html img{
 #     filter: invert(1) hue-rotate(180deg);
 # }
+
+# The real darkmode :]
+config.set("colors.webpage.darkmode.enabled", True)
