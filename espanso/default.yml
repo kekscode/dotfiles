@@ -2,19 +2,16 @@
 
 matches:  # https://espanso.org/docs/matches/
   # Simple text replacement
+  - trigger: ":mail"
+    replace: 'stefan.antoni@deutschebahn.com'
+
   - trigger: "gti"
     replace: "git"
 
-  - trigger: "phtyon"
-    replace: "python"
-
-  - trigger: "pyhton"
-    replace: "python"
-
-  - trigger: "pthon"
-    replace: "python"
-
-  - trigger: "phyton"
+  - triggers: 
+      - "phyton"
+      - "pythn"
+      - "phton"
     replace: "python"
 
   # Date and Time
@@ -25,6 +22,15 @@ matches:  # https://espanso.org/docs/matches/
         type: date
         params:
           format: "%d.%m.%Y"
+          #
+  # Date and Time
+  - trigger: "ztl"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y%m%d%H%M"
 
   - trigger: ":now"
     replace: "{{mytime}}"
@@ -35,7 +41,7 @@ matches:  # https://espanso.org/docs/matches/
           format: "%H:%M:%S"
 
   # Shell
-  - trigger: "brewup"
+  - trigger: ":brewup"
     replace: "{{output}}"
     vars:
       - name: output
