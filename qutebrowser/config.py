@@ -358,7 +358,7 @@ c.input.insert_mode.auto_load = True
 c.tabs.background = True
 c.tabs.title.format = "{audio}{current_title}"
 
-c.colors.webpage.prefers_color_scheme_dark = True
+c.colors.webpage.preferred_color_scheme = "dark"
 
 # Experimental: Allow passthru Escape to websites
 config.bind('<Escape>', 'fake-key <Escape>')
